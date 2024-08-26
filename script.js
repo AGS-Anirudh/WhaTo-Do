@@ -3,6 +3,8 @@ const itemsArray= localStorage.getItem('items')?JSON.parse(localStorage.getItem(
 document.getElementById('enter').addEventListener('click',()=>{
     const item = document.getElementById('item')
     create_Item(item)
+    const text = document.querySelector('#item')
+    text.value=" "
 })
 function displayDate(){
     let formatted_date= new Date();
